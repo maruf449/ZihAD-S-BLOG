@@ -2,9 +2,8 @@ import { Link } from 'react-router-dom';
 import CallToAction from '../components/CallToAction';
 import { useEffect, useState } from 'react';
 import PostCard from '../components/PostCard';
-import NewsletterSubscription from '../components/paratax';
 import WelcomeParallax from '../components/Welcome';
-import { motion } from 'framer-motion';
+import NewsletterSubscription from '../components/NewsletterSubscription';
 
 
 export default function Home() {
