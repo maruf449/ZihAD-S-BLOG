@@ -6,18 +6,10 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://zihadapiblogs.vercel.app',
-        changeOrigin: true,
+        target: 'http://localhost:3000',
         secure: false,
       },
     },
   },
-
-  build: {
-    rollupOptions: {
-      external: ['mongoose'],
-    },
-  },
-  
   plugins: [react()],
 });
